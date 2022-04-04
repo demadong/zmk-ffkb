@@ -77,7 +77,7 @@
 
             bindings = <
     &kp ESC    &kp Q        &kp W       &kp E       &kp R           &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P    &kp SQT
-    &kp TAB    &hm LCTL A   &hm LGUI S  &hm LALT D  &hs LSHIFT F    &kp G            &kp LA(TAB)                &kp H         &hs RSHIFT J   &hm RALT K    &hm RGUI L  &hm RCTL SEMI  &kp SQT
+    &kp TAB    &hm LCTRL A   &hm LGUI S  &hm LALT D  &hs LSHIFT F    &kp G            &kp LA(TAB)                &kp H         &hs RSHIFT J   &hm RALT K    &hm RGUI L  &hm RCTRL SEMI  &kp SQT
     &kp LSHIFT &kp Z        &kp X       &kp C       &kp V           &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH    &kp RCTRL
                                         &kp C_MUTE  &kp MEDIA ESC   &lt NAV RET  &lt MOUSE TAB  &lt SYM BSPC    &lt NUM SPACE   &lt FUNC DEL  &trans
             >;
@@ -89,7 +89,7 @@
             
             bindings = <
     &trans     &trans       &trans      &trans      &trans        &trans                                      &kp K_REDO    &kp K_PASTE  &kp K_COPY    &kp K_CUT   &kp K_UNDO  &trans
-    &trans     &kp LCTL     &kp LGUI    &kp LALT    &kp LSHIFT    &trans              &trans                  &kp CAPS      &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT   &trans
+    &trans     &kp LCTRL     &kp LGUI    &kp LALT    &kp LSHIFT    &trans              &trans                  &kp CAPS      &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT   &trans
     &trans     &trans       &trans      &trans      &trans        &trans                                      &kp INSERT    &kp HOME     &kp PG_DN     &kp PG_UP   &kp END     &trans
                                         &trans      &trans        &trans       &trans       &kp BSPC          &kp SPACE     &kp DEL      &trans
             >;
@@ -102,7 +102,7 @@
             
             bindings = <
     &trans     &kp AMPS     &kp ASTRK   &kp LPAR     &kp LBRC     &kp RBRC                               &kp GT        &kp LT            &trans      &trans      &trans      &trans
-    &trans     &kp DLLR     &kp PRCNT   &kp CARET    &kp COLON    &kp PLUS             &trans            &kp LBKT      &kp RSHIFT        &kp RALT    &kp RGUI    &kp RCTL    &trans
+    &trans     &kp DLLR     &kp PRCNT   &kp CARET    &kp COLON    &kp PLUS             &trans            &kp LBKT      &kp RSHIFT        &kp RALT    &kp RGUI    &kp RCTRL    &trans
     &trans     &kp EXCL     &kp AT      &kp HASH     &kp TILDE    &kp PIPE                               &kp LPAR      &kp RPAR          &trans         &trans      &kp BSLH    &trans
                                         &trans       &kp LPAR     &kp RPAR     &kp UNDER    &kp BSPC     &trans        &trans            &trans
             >;
@@ -115,7 +115,7 @@
           
           bindings = <
   &trans    &kp N7    &kp N8    &kp N9    &kp LBKT   &kp RBKT                         &kp LBRC      &kp RBRC       &trans         &trans        &trans         &trans
-  &trans    &kp N4    &kp N5    &kp N6    &kp SEMI   &kp EQUAL         &trans         &kp LBKT      &kp RSHIFT     &kp RALT    &kp RGUI   &kp RCTL    &trans
+  &trans    &kp N4    &kp N5    &kp N6    &kp SEMI   &kp EQUAL         &trans         &kp LBKT      &kp RSHIFT     &kp RALT    &kp RGUI   &kp RCTRL    &trans
   &trans    &kp N1    &kp N2    &kp N3    &kp GRAVE  &kp BLSH                         &kp LPAR      &kp RPAR       &trans         &trans        &trans         &trans
                                 &trans    &kp DASH   &kp N0   &kp DOT    &kp BSPC     &trans        &trans         &trans
           >;
@@ -128,7 +128,7 @@
             
             bindings = <
     &trans     &kp F7    &kp F8    &kp F9     &kp F12    &trans                        &trans           &trans        &trans      &trans      &trans      &trans
-    &trans     &kp F4    &kp F5    &kp F6     &kp F11    &trans            &trans      &kp K_VOL_UP     &kp RSHIFT    &kp RALT    &kp RGUI    &kp RCTL    &trans
+    &trans     &kp F4    &kp F5    &kp F6     &kp F11    &trans            &trans      &kp K_VOL_UP     &kp RSHIFT    &kp RALT    &kp RGUI    &kp RCTRL    &trans
     &trans     &kp F1    &kp F2    &kp F3     &kp F10    &kp C_MUTE                    &kp K_VOL_DN     &trans        &trans      &trans      &trans      &trans
                                    &trans     &kp K_APP   &kp RET    &kp TAB    &trans    &trans           &kp SPACE    &trans
             >;
@@ -141,7 +141,7 @@
             
             bindings = <
     &trans     &trans             &trans            &bt BT_PRV         &bt BT_NXT     &trans                            &trans    &trans        &trans      &trans      &trans    &trans
-    &trans     &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3       &trans         &trans    &kp RSHIFT    &kp RALT    &kp RGUI    &kp RCTL  &trans
+    &trans     &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3       &trans         &trans    &kp RSHIFT    &kp RALT    &kp RGUI    &kp RCTRL  &trans
     &trans     &ext_power EP_TOG  &ext_power EP_ON  &ext_power EP_OFF  &out OUT_USB   &out OUT_BLE                      &trans    &trans        &trans      &trans      &trans    &trans
                                                     &trans             &trans         &trans             &trans         &trans    &trans        &trans     &trans
             >;
