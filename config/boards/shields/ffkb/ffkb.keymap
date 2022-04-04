@@ -8,10 +8,11 @@
 #define DEFAULT 0
 #define NAV     1
 #define SYM     2
-#define FUNC    3
-#define MEDIA   4
-#define MOUSE   5
-#define WINNAV  6
+#define NUM     3
+#define FUNC    4
+#define MEDIA   5
+#define MOUSE   6
+#define WINNAV  7
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
