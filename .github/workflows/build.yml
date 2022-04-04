@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:3.0-branch
+      image: zmkfirmware/zmk-build-arm:stable
     needs: matrix
     name: Build
     strategy:
@@ -62,10 +62,6 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: actions-setup-cmake
-        uses: jwlawson/actions-setup-cmake@v1.12
-        with:
-          cmake-version: '3.20.x'
       - name: West Init
         run: west init -l config
       - name: West Update
